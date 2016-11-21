@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".home.init.activity.WelcomeActivity">
+
+    <ImageView
+        android:id="@id/imageview_sun"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-200dp"
+        android:background="@drawable/sun_2" />
+
+    <ImageView
+        android:id="@id/imageview_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-70dp"
+        android:background="@drawable/welcome_bottom" />
+
+    <ImageView
+        android:id="@id/imageview_line_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="-230dp"
+        android:layout_marginLeft="-130dp"
+        android:background="@drawable/line_0" />
+
+    <ImageView
+        android:id="@id/imageview_moon"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-150dp"
+        android:background="@drawable/moon_2" />
+
+    <ImageView
+        android:id="@id/imageview_line_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="-250dp"
+        android:background="@drawable/line_0" />
+
+    <ImageView
+        android:id="@id/imageview_line_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-30dp"
+        android:layout_marginRight="-200dp"
+        android:background="@drawable/line_0" />
+
+
+    <TextView
+        android:id="@id/textview_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Version 1.0.0.1"
+        android:textColor="#2c1c4b"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:id="@id/linearlayout_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imageview_bottom"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/textview_en_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Werewolf"
+            android:textColor="#2c1c4b"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@id/textview_ch_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="狼人杀"
+            android:textColor="#2c1c4b"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_corner_white">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-30dp"
+            android:src="@drawable/bg_grass" />
+
+        <LinearLayout
+            android:id="@id/linearlayout_left_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@id/relativelayout_left"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@id/textview_role_desc_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="村民"
+                    android:textColor="#2c2c2c"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@id/imageview_avatar_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/textview_role_desc_left"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_role_villager" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/relativelayout_right"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@id/textview_role_desc_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="狼人"
+                    android:textColor="#2c2c2c"
+                    android:textSize="20dp" />
+
+
+                <ImageView
+                    android:id="@id/imageview_avatar_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/textview_role_desc_right"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_role_wolf" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@id/button_next"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/linearlayout_left_right"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_corner_yellow"
+            android:gravity="center"
+            android:text="放弃选择"
+            android:textColor="#2c2c2c"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="盗贼请选择替换卡牌"
+        android:textColor="#2c2c2c"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

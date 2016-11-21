@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageView
+            android:id="@id/imageview_ic_role"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_role_wolf"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@id/textview_role_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="狼人"
+            android:background="@drawable/bg_role"
+            android:textSize="15dp"
+            android:layout_centerInParent="true"
+            android:gravity="bottom|center_horizontal"
+            android:textColor="#ffffff"
+            />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 欢迎页ID -->
+    <item name="imageview_bottom" type="id" />
+    <item name="imageview_moon" type="id" />
+    <item name="imageview_sun" type="id" />
+    <item name="linearlayout_textview" type="id" />
+    <item name="imageview_line_0" type="id" />
+    <item name="imageview_line_1" type="id" />
+    <item name="imageview_line_2" type="id" />
+    <item name="textview_version" type="id" />
+    <item name="textview_en_app_name" type="id" />
+    <item name="textview_ch_app_name" type="id" />
+    <!-- 开始页面 -->
+    <item name="button_menu" type="id" />
+    <item name="imageview_shade" type="id" />
+    <item name="linearlayout_menu" type="id" />
+    <item name="button_start" type="id" />
+    <item name="imageview_star1" type="id" />
+    <item name="imageview_star2" type="id" />
+
+    <!-- 弹出菜单 -->
+    <item name="linearlayout_role" type="id" />
+    <item name="linearlayout_story" type="id" />
+    <item name="linearlayout_suggestion" type="id" />
+    <item name="linearlayout_exit" type="id" />
+
+
+    <!-- 角色配置页面 -->
+    <item name="gridview_role" type="id" />
+    <item name="button_back" type="id" />
+    <item name="relativelayout_list" type="id" />
+    <item name="textview_list" type="id" />
+    <item name="textview_player_count" type="id" />
+    <item name="relativelayout_content" type="id" />
+    <item name="button_complete" type="id" />
+
+    <item name="imageview_ic_role" type="id" />
+    <item name="imageview_player_checked" type="id" />
+    <item name="textview_role_desc" type="id" />
+
+    <!-- 角色配置页面Dialog List -->
+    <item name="button_close" type="id" />
+    <item name="listview_role" type="id" />
+    <item name="textview_role_count" type="id" />
+    <item name="button_subtract" type="id" />
+    <item name="button_add" type="id" />
+
+    <!-- 游戏操作界面 -->
+    <item name="gridview_player" type="id" />
+    <item name="linearlayout_control" type="id" />
+    <item name="relativelayout_control_notice" type="id" />
+    <item name="button_control" type="id" />
+    <item name="imageview_bg_night" type="id" />
+    <item name="button_yes" type="id" />
+    <item name="textview_notice" type="id" />
+    <item name="button_no" type="id" />
+    <item name="relativelayout_player_item" type="id" />
+    <item name="imageview_ic_player" type="id" />
+    <item name="textview_seat_code" type="id" />
+    <item name="textview_header_title" type="id" />
+
+
+    <!-- 随机分配角色Dialog -->
+    <item name="imageview_avatar" type="id" />
+    <item name="relativelayout_avatar" type="id" />
+    <item name="linearlayout_avatar_choice" type="id" />
+    <item name="button_next" type="id" />
+    <item name="button_default_avatar" type="id" />
+    <item name="button_camera_avatar" type="id" />
+
+    <!-- fragment_layout_left -->
+    <item name="textview_show_role" type="id" />
+    <item name="textview_show_group" type="id" />
+    <item name="switch_role_group" type="id" />
+    <item name="switch_role_desc" type="id" />
+    <item name="relativelayout_role_desc" type="id" />
+    <item name="relativelayout_desc_time" type="id" />
+    <item name="relativelayout_restart" type="id" />
+
+    <!-- 盗贼选择角色页面 -->
+    <item name="relativelayout_left" type="id" />
+    <item name="relativelayout_right" type="id" />
+    <item name="linearlayout_left_right" type="id" />
+    <item name="textview_role_desc_left" type="id" />
+    <item name="textview_role_desc_right" type="id" />
+    <item name="imageview_avatar_left" type="id" />
+    <item name="imageview_avatar_right" type="id" />
+
+</resources>

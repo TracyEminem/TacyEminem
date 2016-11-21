@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_start">
+
+    <Button
+        android:id="@id/button_menu"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_btn_menu" />
+
+    <Button
+        android:id="@id/button_start"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/selector_btn_start"
+        android:text="开始游戏"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@id/imageview_star1"
+        android:layout_width="110dp"
+        android:layout_height="21dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-110dp"
+        android:layout_marginTop="100dp"
+        android:rotation="-30"
+        android:src="@drawable/ic_start1" />
+
+    <ImageView
+        android:id="@id/imageview_star2"
+        android:layout_width="55dp"
+        android:layout_height="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-55dp"
+        android:layout_marginTop="-50dp"
+        android:rotation="-30"
+        android:src="@drawable/ic_start2" />
+
+</RelativeLayout>

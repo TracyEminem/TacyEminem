@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_corner_white">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-30dp"
+            android:src="@drawable/bg_grass" />
+
+        <TextView
+            android:id="@id/textview_role_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="身 份：待查看"
+            android:textColor="#2c2c2c"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:id="@id/relativelayout_avatar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/textview_role_desc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@id/imageview_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_avatar_male" />
+
+            <TextView
+                android:id="@id/textview_seat_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_bg_seat"
+                android:gravity="start"
+                android:paddingLeft="3dp"
+                android:text="15"
+                android:textColor="#2c2c2c"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@id/linearlayout_avatar_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativelayout_avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@id/button_default_avatar"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/shape_corner_blue"
+                android:gravity="center"
+                android:text="默认"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@id/button_camera_avatar"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/shape_corner_yellow"
+                android:gravity="center"
+                android:text="拍照"
+                android:textColor="#2c2c2c"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@id/button_next"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@id/linearlayout_avatar_choice"
+            android:layout_alignRight="@id/linearlayout_avatar_choice"
+            android:layout_below="@id/linearlayout_avatar_choice"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_corner_yellow"
+            android:gravity="center"
+            android:text="查看身份"
+            android:textColor="#2c2c2c"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

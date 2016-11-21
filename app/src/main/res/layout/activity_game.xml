@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <Button
+                android:id="@id/button_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_back" />
+
+            <com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView
+                android:id="@id/gridview_player"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/linearlayout_control"
+                android:layout_below="@id/button_back"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:cacheColorHint="#000000"
+                android:gravity="center"
+                android:horizontalSpacing="0dp"
+                android:listSelector="#00000000"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="3dp" />
+
+            <LinearLayout
+                android:id="@id/linearlayout_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@id/relativelayout_control_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/button_control"
+                    android:layout_centerInParent="true"
+                    android:background="@color/color_blue"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@id/button_no"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_btn_yellow"
+                        android:gravity="center"
+                        android:text="放弃"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@id/textview_notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/button_yes"
+                        android:layout_toRightOf="@id/button_no"
+                        android:gravity="center|start"
+                        android:text="昨夜死亡的是3号玩家，是否选择使用解药？"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff" />
+
+
+                    <Button
+                        android:id="@id/button_yes"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_btn_yellow"
+                        android:gravity="center"
+                        android:text="救人"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@id/button_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_yellow"
+                    android:gravity="center"
+                    android:text="天 黑 了"
+                    android:textSize="15dp" />
+            </LinearLayout>
+            <!--<Button-->
+            <!--android:id="@+id/button_open_menu"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="Right" />-->
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/fragment_left_menu"
+            android:name="com.z.wolfkill.home.main.fragment.MenuLeftFragment"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:tag="LEFT"
+            tools:layout="@layout/menu_layout_left" />
+
+        <fragment
+            android:id="@+id/fragment_right_menu"
+            android:name="com.z.wolfkill.home.main.fragment.MenuRightFragment"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:tag="RIGHT"
+            tools:layout="@layout/menu_layout_right" />
+    </android.support.v4.widget.DrawerLayout>
+
+    <ImageView
+        android:id="@id/imageview_bg_night"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_night"
+        android:visibility="gone" />
+</RelativeLayout>
